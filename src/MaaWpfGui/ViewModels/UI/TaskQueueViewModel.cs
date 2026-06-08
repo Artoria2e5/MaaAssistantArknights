@@ -134,6 +134,11 @@ public class TaskQueueViewModel : Screen
     public static UserDataUpdateSettingsUserControlModel UserDataUpdateTask => UserDataUpdateSettingsUserControlModel.Instance;
 
     /// <summary>
+    /// Gets 库存维持任务Model
+    /// </summary>
+    public static DepotMaintainTaskUserControlModel DepotMaintainTask => DepotMaintainTaskUserControlModel.Instance;
+
+    /// <summary>
     /// Gets 生稀盐酸任务Model
     /// </summary>
     public static CustomSettingsUserControlModel CustomTask => CustomSettingsUserControlModel.Instance;
@@ -1332,6 +1337,7 @@ public class TaskQueueViewModel : Screen
             new GenericCombinedData<Type> { Display = LocalizationHelper.GetString("Roguelike"), Value = typeof(RoguelikeTask) },
             new GenericCombinedData<Type> { Display = LocalizationHelper.GetString("Reclamation"), Value = typeof(ReclamationTask) },
             new GenericCombinedData<Type> { Display = LocalizationHelper.GetString("UserDataUpdate"), Value = typeof(UserDataUpdateTask) },
+            new GenericCombinedData<Type> { Display = LocalizationHelper.GetString("DepotMaintain"), Value = typeof(DepotMaintainTask) },
             new GenericCombinedData<Type> { Display = LocalizationHelper.GetString("Custom"), Value = typeof(CustomTask) },
         ]);
 
