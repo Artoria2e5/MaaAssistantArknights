@@ -104,6 +104,7 @@ icon: material-symbols:task
         "template": "xxx.png",              // 選填，要比對的圖片檔案名稱，可以是字串或字串列表
                                             // 預設為 "任務名稱.png"
                                             // 範本圖檔案可放在 template 及其子資料夾下，載入時會進行遞迴搜尋
+                                            // 範本比對不考虑 alpha 通道，请用 maskRange 或 colorScales 来忽略不需要识别的部分
 
         "templThreshold": 0.8,              // 選填，圖片範本比對得分的門檻值，超過門檻值才認為辨識到了，可以是數字或數字列表
                                             // 預設 0.8, 可根據記錄檔查看實際得分是多少
@@ -174,6 +175,7 @@ icon: material-symbols:task
 
         "template": "xxx.png",              // 選填，要比對的圖片檔案名稱，可以是字串或字串列表
                                             // 預設為 "任務名稱.png"
+                                            // 不考虑 alpha
 
         "count": 4,                         // 比對的特徵點的數量要求 (門檻值), 預設值 = 4
 

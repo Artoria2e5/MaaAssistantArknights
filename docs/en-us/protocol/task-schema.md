@@ -105,6 +105,7 @@ Please note that JSON files do not support comments. The comments in this docume
         "template": "xxx.png",              // Optional, image file to match, can be string or string list
                                             // Default "TaskName.png"
                                             // Template files can be in template folder or subfolders, recursive search when loading
+                                            // The alpha channel is not considered. Use maskRange or colorScales to ignore parts that shouldn't be matched
 
         "templThreshold": 0.8,              // Optional, threshold score for image template matching, can be number or number list
                                             // Default 0.8, check actual score in logs
@@ -175,6 +176,7 @@ Please note that JSON files do not support comments. The comments in this docume
 
         "template": "xxx.png",              // Optional, image file to match, can be string or string list
                                             // Default "TaskName.png"
+                                            // Alpha channel is not used.
 
         "count": 4,                         // Required feature point count (threshold), default = 4
 
