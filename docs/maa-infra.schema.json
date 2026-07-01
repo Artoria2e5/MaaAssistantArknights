@@ -1,15 +1,15 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "title": "Maa Copilot Infrastructure",
+    "title": "Maa Infrastructure Work Plan",
     "type": "object",
     "properties": {
         "title": {
             "type": "string",
-            "description": "The title of the Maa Copilot Infrastructure Plan"
+            "description": "The title of the Maa Infrastructure Plan"
         },
         "description": {
             "type": "string",
-            "description": "The description of the Maa Copilot Infrastructure Plan"
+            "description": "The description of the Maa Infrastructure Plan"
         },
         "plans": {
             "type": "array",
